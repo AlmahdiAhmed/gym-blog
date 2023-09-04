@@ -1,14 +1,13 @@
-"use client";
-import { useContext } from "react";
 import Blogs from "./Blogs";
-import { CategoryProvider } from "./CategoryProvider";
-import Test from "./Test";
+import getData from "./getData";
 
-const Container = ({ children }) => {
-  const { category } = useContext(CategoryProvider);
+const Container = async () => {
+  const blogs = await getData();
+
+  // const isDataEmpty = !Array.isArray(blogs) || blogs.length < 1 || !blogs;
   return (
     <div>
-      <Test category={category}>{children}</Test>
+      <Blogs blogs={blogs} />
     </div>
   );
 };
