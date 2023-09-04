@@ -4,7 +4,9 @@ export default async function Home() {
   return (
     <div>
       home
-      <div>{/* <Container /> */}</div>
+      <div>
+        <Container />
+      </div>
     </div>
   );
 }
