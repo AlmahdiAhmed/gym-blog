@@ -13,8 +13,12 @@ const Blogs = ({ blogs }) => {
     updated = blogs.filter((blog) => blog.category === category);
   }
   return (
-    <div>
-      <h1>{category}</h1>
+    <div className="mt-4 mx-auto w-full flex flex-col gap-5  bg-[#E7ECEF] rounded-xl p-2 sm:p-5">
+      <div>
+        <h1 className="capitalize text-2xl font-extrabold text-[#0f7173] underline decoration-[#F05D5E]">
+          {category}
+        </h1>
+      </div>
       {updated.map((blog) => (
         <Blog key={blog._id} blog={blog} />
       ))}

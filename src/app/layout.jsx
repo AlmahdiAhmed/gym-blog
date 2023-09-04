@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-[url("../../public/bg.jpg")] max-w-3xl mx-auto px-3`}
+        className={`${inter.className} bg-[url("../../public/bg.jpg")] max-w-2xl px-3 mx-auto`}
       >
         <AppContext>
           <Navbar />

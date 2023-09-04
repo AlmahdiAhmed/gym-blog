@@ -18,7 +18,6 @@ const Navbar = () => {
           </h1>
         </Link>
       </div>
-      {category}
       <div className="relative h-full">
         <Categories category={category} setCategory={setCategory} />
       </div>
